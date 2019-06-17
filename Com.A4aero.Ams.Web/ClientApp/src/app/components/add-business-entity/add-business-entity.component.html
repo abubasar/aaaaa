@@ -4,7 +4,9 @@
         <div class="tab-pane fade show active mt-5" id="home" role="tabpanel" aria-labelledby="home-tab">
             <form>
             <div class="row">
-          
+            <div class="col-12" id="errorDiv">
+                <h4 class="text-danger mb-4" id="errorMessage"></h4>
+            </div>
             <!--Left Col-->
             <div class=" col-md-8">
                 <div class="form-row">
@@ -176,12 +178,9 @@
     
                     <div class="col">
                         <div class="form-check-inline form-check">
-                            <label for="inline-checkbox1" class="form-check-label ">
-                                <input type="checkbox" id="agentType1" name="agentType" value="B2B" class="form-check-input">B2B
-                            </label>
-                            <label for="inline-checkbox2" class="form-check-label ">
-                                <input type="checkbox" id="agentType2" name="agentType" value="B2C" class="form-check-input">B2C
-                            </label>
+
+                            <div class="checkbox"><input type="checkbox"  class="radio" value="B2B" name="agentType"> B2B</div>
+                            <div class="checkbox"><input type="checkbox" class="radio" value="B2C" name="agentType"> B2B</div>
                         </div>
                     </div>
                 </div>
@@ -194,13 +193,14 @@
                     <div class="col ">
                         <div class="form-check-inline form-check status">
                           
-                                <label class="form-check-label ">
-                                    <input type="checkbox"  name="status" value="1" class="form-check-input">Active
-                                </label>
+                          
+                              <div class="checkbox"><input type="checkbox" class="radio" value="1" name="status"> Coffee</div>
+                              <div class="checkbox"><input type="checkbox" class="radio" value="2" name="status"> Tea</div>
+                               <div class="checkbox"><input type="checkbox" class="radio" value="3" name="status"> Coke</div>
                           
                         </div>
     
-                    
+                        <div class="statusError"></div>
                     </div>
                 </div>
                

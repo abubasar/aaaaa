@@ -11,6 +11,34 @@ namespace Com.A4aero.Ams.ViewModel
         {
             Code = model.Code;
             Email = model.Email;
+            Name = model.Name;
+            Street = model.Street;
+            City = model.City;
+            State = model.State;
+            Zip = model.Zip;
+            Country = model.Country;
+            Mobile = model.Mobile;
+            Phone = model.Phone;
+            ContactPerson = model.ContactPerson;
+            Logo = model.ContactPerson;
+            ReferredBy = model.ReferredBy;
+            Status = model.Status;
+            Balance = model.Balance;
+            LoginUrl = model.LoginUrl;
+            SecurityCode = model.SecurityCode;
+            SMTPServer = model.SMTPServer;
+            SMTPPort = model.SMTPPort;
+            SMTPUsername = model.SMTPUsername;
+            SMTPPassword = model.SMTPPassword;
+            Deleted = model.Deleted;
+            CurrentBalance = model.CurrentBalance;
+            AgentType = model.AgentType;
+            if ( model.MarkupPlan!= null)
+            {
+                this.MarkupPlan = new MarkupPlanViewModel(model.MarkupPlan);
+            }
+
+
         }
 
         public string Code { get; set; }
@@ -39,6 +67,6 @@ namespace Com.A4aero.Ams.ViewModel
         public decimal CurrentBalance { get; set; }
         public string AgentType { get; set; }
       
-        public  string MarkupPlanName { get; set; }
+        public MarkupPlanViewModel MarkupPlan   { get; set; }
     }
 }
