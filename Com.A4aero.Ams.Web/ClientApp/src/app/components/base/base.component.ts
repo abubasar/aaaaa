@@ -17,7 +17,7 @@ this.searchRequest.isAscending=false;
 save(){
   this.service.save(this.model).subscribe(res=>{
     this.reset();
-    console.log('success');
+    console.log('success',res);
   },error=>{
     console.log(error)
   });

@@ -21,6 +21,7 @@ namespace Com.A4aero.Ams.DataModel
         public string Logo { get; set; }
         public string ReferredBy { get; set; }
         public int Status { get; set; }
+        [Column(TypeName = "decimal(18, 2)")]
         public decimal Balance { get; set; }
         public string LoginUrl { get; set; }
         public string SecurityCode { get; set; }
@@ -30,6 +31,7 @@ namespace Com.A4aero.Ams.DataModel
         public string SMTPUsername { get; set; }
         public string SMTPPassword { get; set; }
         public bool Deleted { get; set; }
+        [Column(TypeName = "decimal(18, 2)")]
         public decimal CurrentBalance { get; set; }
         public string AgentType { get; set; }
         [ForeignKey("MarkupPlan")]

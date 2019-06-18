@@ -4,14 +4,16 @@ using Com.A4aero.Ams.DataModel;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Com.A4aero.Ams.DataModel.Migrations
 {
     [DbContext(typeof(AmsContext))]
-    partial class AmsContextModelSnapshot : ModelSnapshot
+    [Migration("20190618034930_second")]
+    partial class second
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -41,7 +43,7 @@ namespace Com.A4aero.Ams.DataModel.Migrations
                     b.Property<DateTime>("CreatedOnUtc");
 
                     b.Property<decimal>("CurrentBalance")
-                        .HasColumnType("decimal(18, 2)");
+                        .HasColumnType("decimal(18, 6)");
 
                     b.Property<bool>("Deleted");
 
